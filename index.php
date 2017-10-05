@@ -12,19 +12,38 @@ $y = 7;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <style>
+    	p{
+    		color: red;
+    		font-family: helvetica;
+    		text-align: center;
+
+    	}
+
+    	.waarden{
+    		margin-top: 200px;
+    	}
+    </style>
 </head>
 <body>
 
 
-	<?php
+<form>
+	<input type="search" name="q">
+	<input type="submit" value="search">
+</form>
+<div class="waarden">
+<p><?php echo $x + $y; ?></p>
+<p><?php echo $x - $y; ?></p>
+<p><?php echo $x * $y; ?></p>
+<p><?php echo $x / $y; ?></p>
+<p><?php echo $x % $y; ?></p>
+</div>
 
-echo $x + $y, "\n";
-echo $x - $y, "\n";
-echo $x * $y, "\n";
-echo $x / $y, "\n";
-echo $x % $y, "\n";
 
-?>
+
+
 </body>
 </html>
 
